@@ -63,8 +63,7 @@ int main()
 
         case 'B':
         case 'b':
-            counter = read_file(input, daily_readings);
-            mean /= counter;
+            float mean = find_mean(reading* dataArray, int numReadings);
             printf("Your average blood iron was %.2f\n", mean);
             fclose(input);
             break;
